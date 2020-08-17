@@ -219,7 +219,7 @@ h2 {
     font-family: "Exo 2.0";
     font-size: 30px;
     line-height: 1.2;    
-    font-weight: bold;
+    font-weight: 800;
     color: #565353;
 }
 
@@ -430,24 +430,29 @@ textarea:focus {
 
 /*-- Breadcrumbs --*/
 
-/*.breadcrumbs_wrapp {
-    padding: 40px 0 20px 0;
+.breadcrumbs_wrapp {
+    padding: 36px 0 12px 0;
+    border-bottom: 1px solid #e5e5e5; 
+}
+
+.breadcrumbs {
+    margin: 0 -12px;
 }
 
 .breadcrumbs li {
     display: inline-block;
     vertical-align: top;
-    padding: 0 5px;
+    padding: 0 12px;
 }
 
 .breadcrumbs li:after {
     position: relative;
-    top: -2px;
-    left: 5px;
-    content: "\2192";
-    font-size: 13px;
+    top: -1px;
+    left: 15px;
+    content: "\2f";
+    font-size: 18px;
     line-height: 23px;
-    color: #333333;
+    color: #b2b2b2;
 }
 
 .breadcrumbs li:last-child:after {
@@ -455,32 +460,30 @@ textarea:focus {
 }
 
 .breadcrumbs li a {
-    border-bottom: 1px solid transparent;
     font-size: 18px;
-    line-height: 23px;
-    color: #333333;
+    line-height: 20px;
+    color: #741b75;
 }
 
 .breadcrumbs li a:link,
 .breadcrumbs li a:visited {
-    border-bottom: 1px solid transparent;
+
 }
 
 .breadcrumbs li a:active,
 .breadcrumbs li a.active {
-    border-bottom: 1px solid #333333;
+
 }
 
 .breadcrumbs li a:hover {
-    border-bottom: 1px solid #333333;
+
 }
 
 .breadcrumbs li:last-child a {
     pointer-events: none;
     cursor: default;
-    opacity: .6;
-    border-bottom: 1px solid transparent;
-}*/
+    color: #b2b2b2;
+}
 
 /*-- /Breadcrumbs --*/
 
@@ -711,6 +714,7 @@ textarea:focus {
     margin: 4px 0;
     padding: 10px 20px 11px 20px;
     border: 1px solid transparent;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.2;
@@ -837,6 +841,23 @@ textarea:focus {
 }
 
 /* ----- / Responsive Menu Button ------ */
+
+/*-- Header Inner --*/
+
+.inner_header {
+    width: 100%;    
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+}
+
+/*-- /Header Inner --*/
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -1970,6 +1991,207 @@ textarea:focus {
 }
 
 /*-- /Section 4 - Main Page --*/
+
+/*-- Section 1 - Questions Page --*/
+
+.questions_article {
+    display: flex;
+    display: -webkit-flex;
+    margin: 13px 0;
+}
+
+.questions_article .left {
+    width: 655px;
+    padding-bottom: 42px;
+}
+
+.questions_article .right {
+    width: calc(100% - 655px);
+}
+
+.questions_article h1 {
+    letter-spacing: 3px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.drpdown_items {
+    padding: 15px 0;
+}
+
+.drpdown_item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.drpdown_item_header {
+    cursor: pointer;
+    position: relative;
+    padding: 24px 0 24px 50px;
+}
+
+.drpdown_item_header:before {
+    display: block;
+    content: "+";
+    width: 31px;
+    height: 31px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .09);
+    -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .09);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .09);
+    position: absolute;
+    top: 23px;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.drpdown_item_header h3 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #741b75;
+}
+
+.dropdown_item_box {
+    display: none;
+    padding: 0 10% 14px 0;
+}
+
+.dropdown_item_box p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #4f4b4b;
+}
+
+.drpdown_item_header.active h3 {
+    color: #565353;
+}
+
+.drpdown_item_header.active:before {
+    content: "-";
+    color: #565353;
+}
+
+.button_wrapp {
+    padding: 21px 0;
+}
+
+.button_wrapp .red_pill {
+    min-width: 187px;
+}
+
+.questions_article .right img {
+    position: relative;
+    top: 81px;
+    left: 18%;
+}
+
+/*-- /Section 1 - Questions Page --*/
+
+/*-- Section 2 - Questions Page --*/
+
+.ask_form_article {
+    display: flex;
+    display: -webkit-flex;
+    min-height: 564px;
+    margin-bottom: 118px;
+}
+
+.ask_form_article .left {
+    display: flex;
+    display: -webkit-flex;
+    width: 50%;
+    position: relative;
+}
+
+.ask_form_article .right {
+    display: flex;
+    display: -webkit-flex;
+    width: 50%;
+    padding: 74px 0 0 20px;
+}
+
+.ask_form_article .left .img_wrapp {
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: hidden;
+    background-color: red;
+}
+
+.ask_form_article .left .img_wrapp img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.ask_form_wrapp form {
+    margin: 42px 0 30px 0;
+}
+
+.ask_form {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 30px -10px;
+}
+
+.ask_form .input_wrapp {
+    width: 50%;
+    padding: 9px 10px;
+}
+
+.input_box_2 input {
+    height: 50px;
+    line-height: 50px;
+}
+
+.submit_wrapp {
+
+}
+
+.submit_wrapp button {
+    min-width: 190px;
+}
+
+
+/*-- /Section 2 - Questions Page --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
