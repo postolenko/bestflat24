@@ -1784,6 +1784,7 @@ textarea:focus {
     -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+    position: relative;
 }
 
 #map {
@@ -2170,10 +2171,35 @@ textarea:focus {
     min-width: 190px;
 }
 
-
 /*-- /Section 2 - Questions Page --*/
 
+/*-- Section 1 - Appartments Page --*/
 
+.h1_wrapp_2 {
+    padding: 17px 0 25px 0;
+}    
+
+.filters_form_wrapp_2 {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .09);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .09);
+    margin: 17px 0 13px 0;
+    padding: 11px 30px 22px 30px;
+}
+
+.buttons_wrapp_2 {
+    margin: 1px -18px;
+}
+
+/*-- /Section 1 - Appartments Page --*/
+
+/*-- Section 3 - Appartments Page --*/
+
+.map_wrapp_2 {
+    margin-bottom: 122px;
+}
+
+/*-- /Section 3 - Appartments Page --*/
 
 
 
