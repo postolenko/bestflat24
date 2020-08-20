@@ -742,15 +742,18 @@ textarea:focus {
 
 .red_pill:link,
 .red_pill.visited {
+    color: #fff;
     background-color: rgb(201, 64, 78);
 }
 
 .red_pill:active,
 .red_pill.active {
+    color: #fff;
     background-color: #8a1723;
 }
 
 .red_pill:hover {
+    color: #fff;
     background-color: #8a1723;
 }
 
@@ -1871,7 +1874,7 @@ textarea:focus {
     border-bottom: 2px solid transparent;
 }
 
-.ymaps-layers-pane {
+#map .ymaps-layers-pane {
     filter: grayscale(1);
     -ms-filter: grayscale(1);
     -webkit-filter: grayscale(1);
@@ -1879,11 +1882,11 @@ textarea:focus {
     -o-filter: grayscale(1);
 }
 
-.ymaps-logotype-div {
+#map .ymaps-logotype-div {
     display: none !important;
 }
 
-.ymaps-copyrights-legend {
+#map .ymaps-copyrights-legend {
     display: none !important;
 }
 
@@ -2124,7 +2127,6 @@ textarea:focus {
     top: 0;
     right: 0;
     overflow-y: hidden;
-    background-color: red;
 }
 
 .ask_form_article .left .img_wrapp img {
@@ -2201,8 +2203,106 @@ textarea:focus {
 
 /*-- /Section 3 - Appartments Page --*/
 
+/*-- Section 1 - Contacts Page --*/
 
+.sect_1_cp {
+    padding: 40px 0;
+    overflow: hidden;
+}
 
+.contacts_templ {
+    display: flex;
+    display: -webkit-flex;
+    min-height: 565px;
+}
+
+.contacts_templ .left {
+    width: 50%;
+    padding: 22px 0;
+}
+
+.contacts_templ .right {
+    width: 50%;
+    position: relative;
+}
+
+.contacts_templ p {
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #565353;    
+}
+
+.contacts_templ p a {
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #741b75;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.contacts_templ p a:link,
+.contacts_templ p a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.contacts_templ p a.active,
+.contacts_templ p a:active {
+    border-bottom: 1px solid #741b75;
+}
+
+.contacts_templ p a:hover {
+    border-bottom: 1px solid #741b75;
+}
+
+.contacts_templ .tel_link {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.contacts_templ .red_pill {
+    margin: 28px 0;
+}
+
+.contacts_templ .right #map_2 {
+    width: calc( 50vw - 40px );
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.ask_form_wrapp_2 {
+    padding-top: 20px;
+}
+
+/*-- /Section 1 - Contacts Page --*/
+
+/*-- Section 2 - Contacts Page --*/
+
+.sect_2_cp {
+    padding: 61px 0 11px 0;
+}
+
+/*-- /Section 2 - Contacts Page --*/
 
 
 
