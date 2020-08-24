@@ -61,4 +61,24 @@ ymaps.ready(function () {
         myMap3.geoObjects.add(myPlacemark4);
     }
 
+    if($("#map_4").length > 0) {
+        var myMap4 = new ymaps.Map('map_4', {
+            center: [55.755814, 37.617635],
+            zoom: 14
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+        myPlacemark5 = new ymaps.Placemark([55.755814, 37.617635], {
+            hintContent: ''
+        }, {
+            iconLayout: 'default#imageWithContent',
+            iconImageHref: 'img/marker.svg',
+            iconImageSize: [37, 48],
+            iconImageOffset: [-17, -24]
+        });
+
+        myMap4.geoObjects.add(myPlacemark5);
+    }
+
 });

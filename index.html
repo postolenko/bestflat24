@@ -19,7 +19,6 @@
 	<!-- Header -->
 		
 	<header>
-
 		<div class="header_site">
 			<div class="header_site_templ">
 				<div class="left">
@@ -28,11 +27,20 @@
 							<p><a class="tel_link" href="tel:88007890913">8 (800) 789-09-13</a></p>
 							<p>График работы: с 08:00 до 24:00</p>
 						</div>
+						<a href="#" class="logo_resp">
+							<img src="img/logo_resp.png" alt="" />
+						</a>
 					</div>
 					<div class="left_col_2">
-						<ul class="main_nav">
+						<ul class="main_nav desc_nav">
 							<li><a href="#">Главная</a></li>
-							<li><a href="#">Квартиры</a></li>
+							<li>
+								<a href="#">Квартиры</a>
+								<ul>
+									<li><a href="">Москва</a></li>
+									<li><a href="">Мытищи</a></li>
+								</ul>
+							</li>
 							<li><a href="#">О компании</a></li>
 						</ul>
 					</div>
@@ -41,10 +49,27 @@
 					<a href="#" class="logo">
 						<img src="img/logo.png" alt="" />
 					</a>
+					<div class="main_nav_resp" id="resp_nav">
+						<ul class="main_nav">
+							<li><a href="#">Главная</a></li>
+							<li>
+								<a href="#">Квартиры</a>
+								<button type="button" class="dropdown_btn"></button>
+								<ul>
+									<li><a href="">Москва</a></li>
+									<li><a href="">Мытищи</a></li>
+								</ul>
+							</li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Собственникам </a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="right">
 					<div class="right_col_1">
-						<ul class="main_nav">
+						<ul class="main_nav desc_nav">
 							<li><a href="#">Собственникам </a></li>
 							<li><a href="#">Контакты</a></li>
 							<li><a href="#">Вопрос-ответ</a></li>
@@ -52,18 +77,17 @@
 					</div>
 					<div class="right_col_2">
 						<div>
-							<a href="#" class="red_pill">Обратный звонок</a>
+							<a href="#" class="red_pill"  data-popup-link = "popup_1">Обратный звонок</a>
 						</div>
 					</div>
-					<button class="respmenubtn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
 				</div>
 			</div>
-		</div>
-								
+			<button class="respmenubtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>								
 	</header>
 
 	<!-- /Header -->
@@ -222,12 +246,13 @@
 						<p>Найдено вариантов: 92</p>
 					</div>
 				</div>
+				<button type="button" class="resp_filter_btn">Фильтры</button>
 				<div class="catalog_templ">
-					<div class="left">
+					<div class="left" id="filters">
 						<div class="sidebar_title">
 							<h2>Быстрый подбор</h2>
 						</div>
-						<div>
+						<div class="sidebar_filters_thumbnails">
 							<div class="sidebar_filters">
 								<h3>По количеству комнат</h3>
 								<div class="checkboxes_scrollbox">
@@ -555,7 +580,7 @@
 					<div id="map"></div>
 					<div class="hover_box">
 						<div>
-							<a href="#">Поиск квартир на карте</a>
+							<a href="#" data-popup-link="popup_3">Поиск квартир на карте</a>
 						</div>
 					</div>
 				</div>
@@ -650,6 +675,79 @@
 	<!-- /Footer -->
 
 	</div>
+
+	<!-- Popups -->
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<button type="button" class="close_popup"></button>
+		<div class="popup_content">
+			<div class="inner">
+				<div class="popup_header">
+					<h3>Задайте свой вопрос!<br /> И наши менеджеры ответят на него в течении 15 минут</h3>
+				</div>
+				<form>
+					<div class="ask_form">
+						<div class="input_wrapp">
+							<div class="input_box input_box_2">
+								<input type="text" name="name" placeholder="Ваше имя" />
+							</div>
+						</div>
+						<div class="input_wrapp">
+							<div class="input_box input_box_2">
+								<input type="tel" name="name" placeholder="Ваш телефон" />
+							</div>
+						</div>
+						<div class="input_wrapp">
+							<div class="input_box input_box_2">
+								<input type="email" name="name" placeholder="Ваш e-mail" />
+							</div>
+						</div>
+						<div class="input_wrapp">
+							<div class="input_box input_box_2">
+								<input type="text" name="name" placeholder="Комментарий" />
+							</div>
+						</div>
+					</div>
+					<div class="submit_wrapp submit_wrapp_3">
+						<button type="submit" class="red_pill">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_sect" data-popup = "popup_2">
+		<button type="button" class="close_popup"></button>
+		<div class="popup_content">
+			<div class="inner thanks_templ">
+				<h2>Спасибо ваша заявка принята!</h2>
+				<h3>Наши менеджеры перезвонят вам в течении 15 минут</h3>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_sect" data-popup = "popup_3">
+		<button type="button" class="close_popup"></button>
+		<div class="popup_content map_popup_sect">
+			<div class="inner map_popup">
+				<div id="map_4"></div>
+				<div class="map_footer">
+					<div>
+						<p class="blue">Студии</p>
+					</div>
+					<div>
+						<p class="purple">1-комнатные</p>
+					</div>
+					<div>
+						<p class="orange">2-комнатные</p>
+					</div>
+					<div>
+						<p class="green">3-комнатные</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup_bg"></div>
+	<a href="#" class="succesPopupLink" data-popup-link="popup_2"></a>
+	<!-- /Popups -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
