@@ -104,7 +104,7 @@
 	}
 
 	.main_nav_resp .main_nav li {
-	    padding: 5px 14px;
+	    padding: 5px 13px;
 	}
 
 	.main_nav li ul li a {
@@ -134,6 +134,10 @@
 		padding: 0 25px;
 	}
 
+	h1 {
+	    font-size: 44px;
+	}
+
 	/*-- Header --*/
 
 	.header_site_templ {
@@ -149,6 +153,23 @@
 	}
 
 	/*-- /Header --*/
+
+	/*-- Section 1 - Questions Page --*/
+
+	.questions_article .left {
+	    width: 560px;
+	}
+
+	.questions_article .right {
+	    width: calc(100% - 560px);
+	}
+
+	.questions_article .right img {
+	    left: 7%;
+	}
+
+	/*-- /Section 1 - Questions Page --*/
+
 
 }
 
@@ -332,6 +353,18 @@
 
 	/*-- /Section 1 - Main Page --*/
 
+	/*-- Section 1 - Questions Page --*/
+
+	.questions_article .left {
+	    width: 100%;
+	}
+
+	.questions_article .right {
+	    display: none;
+	}
+
+	/*-- /Section 1 - Questions Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ {
@@ -432,6 +465,22 @@ h1 {
 
 /*-- /Section 4 - Main Page --*/
 
+/*-- Section 3 - About Page --*/
+
+.adv_thumbs_2 .adv_thumb {
+    width: 50%;
+}
+
+/*-- /Section 3 - About Page --*/
+
+/*-- Section 1 - Appartments Page --*/
+
+.filters_form_wrapp_2 {
+	box-shadow: none;
+}
+
+/*-- /Section 1 - Appartments Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -460,7 +509,7 @@ h1 {
 
 .red_pill {
     margin: 2px 0;
-    padding: 6px 10px 8px 10px;
+	padding: 9px 10px 10px 10px;
     font-size: 16px;
 }
 
@@ -469,7 +518,7 @@ h1 {
 }
 
 .right_col_2 {
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 /*-- /Header --*/
@@ -516,6 +565,142 @@ h1 {
 
 /*-- /Section 4 - Main Page --*/
 
+/*-- Section 1 - About Page --*/
+
+.article_2 {
+	position: relative;
+	min-height: auto;
+	padding: 20px 0;
+}
+
+.article_2 .left {
+    width: 100%;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.article_2 .right {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+}
+
+.article_2_2 .img_box {
+    height: 100%;
+    width: 100%;
+}
+
+.article_2 p {    
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*-- /Section 1 - About Page --*/
+
+/*-- Section 2 - Contacts Page --*/
+
+.sect_2_cp {
+    padding: 11px 0;
+}
+
+.ask_form_article {
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
+.ask_form_article .left {
+	display: none;
+}
+
+.ask_form_article .right {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ask_form_wrapp form {
+    margin: 20px 0;
+}
+
+.ask_form {
+    margin: 15px -10px;
+}
+
+.submit_wrapp button {
+    min-width: 320px;
+}
+
+/*-- /Section 2 - Contacts Page --*/
+
+/*-- Section 1 - Contacts Page --*/
+
+.sect_1_cp {
+    padding: 10px 0;
+}
+
+.contacts_templ {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    min-height: auto;
+}
+
+.contacts_templ .left,
+.contacts_templ .right {
+    width: 100%;
+	padding: 5px 0;
+}
+
+.contacts_templ .right #map_2 {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    left: 0;
+}
+
+.contacts_templ p {
+    padding: 9px 0;
+}
+
+.submit_wrapp {
+	text-align: center;
+}
+
+.submit_wrapp .red_pill {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*-- /Section 1 - Contacts Page --*/
+
+/*-- Section 1 - Questions Page --*/
+
+.questions_article h1 {
+    font-size: 39px;
+}
+
+.drpdown_item_header {
+    padding: 15px 0 15px 40px;
+}
+
+.drpdown_item_header:before {
+    top: 15px;
+}
+
+.drpdown_item_header h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.questions_article .left {
+    padding-bottom: 0;
+}
+
+/*-- /Section 1 - Questions Page --*/
+
 /*-- Footer --*/
 
 .corp_templ {
@@ -558,6 +743,30 @@ h1 {
 }
 
 /*-- /Popups --*/
+
+}
+
+@media only screen and (max-width: 750px) {
+
+/*-- Section 2 - About Page --*/
+
+.step_thumb_2 {
+    width: 100%;
+    padding: 15px 0 15px 130px;
+    position: relative;
+}
+
+.step_thumb_2:after {
+	display: none;
+}
+
+.step_thumb_2 .num {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*-- /Section 2 - About Page --*/
 
 }
 
@@ -605,6 +814,74 @@ h1 {
 }
 
 /*-- /Section 2 - Main Page --*/
+
+/*-- Section 2 - About Page --*/
+
+.steps_thumbs_2 {
+    margin: 0 -15px 30px -15px;
+}
+
+/*-- /Section 2 - About Page --*/
+
+/*-- Section 3 - About Page --*/
+
+.sect_3_ab {
+    padding-top: 35px;
+}
+
+.adv_thumbs_2 {
+    margin: 0;
+}
+
+.adv_thumbs_2 .adv_thumb {
+    width: 100%;
+	padding: 15px 0;
+}
+
+.adv_thumb .icon_box {
+    top: 20px;
+}
+
+/*-- /Section 3 - About Page --*/
+
+/*-- Section 3 - About Page --*/
+
+.h2_wrapp {
+    padding: 10px 0;
+}
+
+.testimonial {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.testimonial .left_col {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.testimonial .right_col {
+	width: 100%;
+	text-align: center;
+}
+
+.testimonial_slider_arrows .slick-arrow {
+    margin: 0 15px;
+}
+
+.testimonial .left_col .photo_box {
+	margin: 0 auto;
+}
+
+/*-- /Section 3 - About Page --*/
+
+/*-- Section 1 - Questions Page --*/
+
+.questions_article h1 {
+    font-size: 31px;
+}
+
+/*-- /Section 1 - Questions Page --*/
 
 /*-- Footer --*/
 
@@ -700,6 +977,44 @@ h1 {
 }
 
 /*-- /Section 2 - Main Page --*/
+
+/*-- Section 2 - About Page --*/
+
+.steps_thumbs_2 {
+    margin: 0 0 30px 0;
+}
+
+.step_thumb_2 {
+    padding: 15px 0 15px 80px;
+}
+
+.step_thumb_2 .num {
+    width: 70px;
+    height: 70px;
+}
+
+.step_thumb_2 .num p {
+    font-size: 46px;
+    line-height: 58px;
+}
+
+/*-- /Section 2 - About Page --*/
+
+/*-- Section 3 - About Page --*/
+
+.testimonial {
+    padding: 18px 20px 20px 20px;
+}
+
+/*-- /Section 3 - About Page --*/
+
+/*-- Section 2 - Appartments Page --*/
+
+.map_wrapp_2 {
+    margin-bottom: 60px;
+}
+
+/*-- /Section 2 - Appartments Page --*/
 
 /*-- Footer --*/
 

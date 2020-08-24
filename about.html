@@ -28,11 +28,20 @@
 							<p><a class="tel_link" href="tel:88007890913">8 (800) 789-09-13</a></p>
 							<p>График работы: с 08:00 до 24:00</p>
 						</div>
+						<a href="#" class="logo_resp">
+							<img src="img/logo_resp.png" alt="" />
+						</a>
 					</div>
 					<div class="left_col_2">
-						<ul class="main_nav">
+						<ul class="main_nav desc_nav">
 							<li><a href="#">Главная</a></li>
-							<li><a href="#">Квартиры</a></li>
+							<li>
+								<a href="#">Квартиры</a>
+								<ul>
+									<li><a href="">Москва</a></li>
+									<li><a href="">Мытищи</a></li>
+								</ul>
+							</li>
 							<li><a href="#">О компании</a></li>
 						</ul>
 					</div>
@@ -41,10 +50,27 @@
 					<a href="#" class="logo">
 						<img src="img/logo.png" alt="" />
 					</a>
+					<div class="main_nav_resp" id="resp_nav">
+						<ul class="main_nav">
+							<li><a href="#">Главная</a></li>
+							<li>
+								<a href="#">Квартиры</a>
+								<button type="button" class="dropdown_btn"></button>
+								<ul>
+									<li><a href="">Москва</a></li>
+									<li><a href="">Мытищи</a></li>
+								</ul>
+							</li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Собственникам </a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="right">
 					<div class="right_col_1">
-						<ul class="main_nav">
+						<ul class="main_nav desc_nav">
 							<li><a href="#">Собственникам </a></li>
 							<li><a href="#">Контакты</a></li>
 							<li><a href="#">Вопрос-ответ</a></li>
@@ -52,16 +78,16 @@
 					</div>
 					<div class="right_col_2">
 						<div>
-							<a href="#" class="red_pill">Обратный звонок</a>
+							<a href="#" class="red_pill"  data-popup-link = "popup_1">Обратный звонок</a>
 						</div>
 					</div>
-					<button class="respmenubtn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
 				</div>
 			</div>
+			<button class="respmenubtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</div>
 								
 	</header>
@@ -84,7 +110,7 @@
 
 		<!-- Section 1 - About Page -->
 
-		<section>
+		<section class="overflow_wrapp">
 			<div class="row">
 				<div class="article_2 article_2_2">
 					<div class="left">
@@ -141,7 +167,7 @@
 
 		<!-- Section 3 - About Page -->
 
-		<section class="sect_3_ab blue_bg_3">
+		<section class="sect_3_ab blue_bg_3 overflow_wrapp">
 			<div class="row">
 				<div class="adv_thumbs_sect">
 					<div class="h2_wrapp">
@@ -250,6 +276,7 @@
 		<!-- /Section 3 - About Page -->
 
 		<!-- Section 2 - Contacts Page -->
+
 		<section class="sect_2_cp">
 			<div class="row">
 				<div class="ask_form_article">
@@ -295,6 +322,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- /Section 2 - Contacts Page -->
 
 		</div>

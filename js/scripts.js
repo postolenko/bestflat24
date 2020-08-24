@@ -1,7 +1,7 @@
 function getWrapperPadding() {
   if($(".inner_header").length > 0) {
     $(".wrapper").css({
-      "padding-top" : $(".inner_header").height() + "px"
+      "padding-top" : $(".inner_header .header_site").height() + "px"
     });
   }
 }
