@@ -4,4 +4,4 @@
 # http://postolenko.github.io/bestflat24/apartments.html
 # http://postolenko.github.io/bestflat24/contacts.html
 # http://postolenko.github.io/bestflat24/sobsvennikam.html
-# http://postolenko.github.io/bestflat24/sabout.html
+# http://postolenko.github.io/bestflat24/about.html
