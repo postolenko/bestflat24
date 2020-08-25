@@ -766,7 +766,7 @@ textarea:focus {
 
 .main_nav li .dropdown_btn {
 	position: absolute;
-	top: 9px;
+	top: 11px;
 	right: 20px;
 	-webkit-transition-property: transform;
     -webkit-transition-duration: .3s;
@@ -2786,11 +2786,11 @@ textarea:focus {
 }
 
 .slider_1 {
-
+	margin: 0 -30px;
 }
 
 .slider_1 .slide {
-
+	padding: 0 30px;
 }
 
 .case_templ {

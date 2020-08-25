@@ -214,6 +214,22 @@
 
 	/*-- /Section 2 - Main Page --*/
 
+	/*-- Section 2 - Sob Page --*/
+
+	.step_thumb {
+	    margin: 9px 0;
+	}
+
+	/*-- /Section 2 - Sob Page --*/
+
+	/*-- Section 4- Sob Page --*/
+
+	.adv_thumb {
+	    width: 50%;
+	}
+
+	/*-- /Section 4- Sob Page --*/
+
 }
 
 
@@ -365,6 +381,30 @@
 
 	/*-- /Section 1 - Questions Page --*/
 
+	/*-- Section 2 - Sob Page --*/
+
+	.lines {
+		display: none;
+	}
+
+	.steps_thumbs {
+		margin: 0 -20px;
+	}
+
+	.step_thumb {
+		max-width: 33.33% !important;
+	    padding-right: 0 !important;
+	    text-align: left !important;
+	    padding: 0 20px;
+	}
+
+	.step_thumb .num {
+		right: auto !important;
+	    left: 120px !important;
+	}
+
+	/*-- /Section 2 - Sob Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ {
@@ -480,6 +520,18 @@ h1 {
 }
 
 /*-- /Section 1 - Appartments Page --*/
+
+/*-- Section 3- Sob Page --*/
+
+.case_templ .left_col {
+	display: none;
+}
+
+.case_templ .right_col {
+	width: 100%;
+}
+
+/*-- /Section 3- Sob Page --*/
 
 }
 
@@ -701,6 +753,58 @@ h1 {
 
 /*-- /Section 1 - Questions Page --*/
 
+/*-- Section 1 - Sob Page --*/
+
+.video_article {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.video_article .left {
+	padding: 10px 0;
+	position: relative;
+}
+
+.video_article .right {
+	padding: 10px 0;
+	position: relative;
+	opacity: 1;
+}
+
+.article_2 {
+    margin: 15px 0 45px 0;
+}
+
+.article_2 h1 {
+    padding-bottom: 20px;
+}
+
+.video_box {
+    height: 320px;
+}
+
+/*-- /Section 1 - Sob Page --*/
+
+/*-- Section 3- Sob Page --*/
+
+.slider_sect {
+    padding: 40px 0;
+}
+
+/*-- /Section 3- Sob Page --*/
+
+/*-- Section 4- Sob Page --*/
+
+.sect_4_sp {
+    padding-top: 45px;
+}
+
+.map_3_box {
+    margin: 40px 0;
+}
+
+/*-- /Section 4- Sob Page --*/
+
 /*-- Footer --*/
 
 .corp_templ {
@@ -767,6 +871,31 @@ h1 {
 }
 
 /*-- /Section 2 - About Page --*/
+
+/*-- Section 2 - Sob Page --*/
+
+.steps_thumbs {
+	margin: 0;
+}
+
+.step_thumb {
+	width: 50%;
+	max-width: 50% !important;
+}
+
+.step_thumb:nth-child(6) {
+	order: 4;
+}
+
+.step_thumb:nth-child(5) {
+	order: 5;
+}
+
+.step_thumb:nth-child(4) {
+	order: 6;
+}
+
+/*-- /Section 2 - Sob Page --*/
 
 }
 
@@ -883,6 +1012,27 @@ h1 {
 
 /*-- /Section 1 - Questions Page --*/
 
+/*-- Section 3- Sob Page --*/
+
+.sect_3_sp {
+    padding-bottom: 30px;
+}
+
+.slider_1_append_arrows .slick-arrow {
+    margin: 0 15px;
+}
+
+/*-- /Section 3- Sob Page --*/
+
+/*-- Section 4- Sob Page --*/
+
+.adv_thumb {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+/*-- /Section 4- Sob Page --*/
+
 /*-- Footer --*/
 
 .footer_templ > .left > div:nth-child(1) {
@@ -918,7 +1068,7 @@ h1 {
 @media only screen and (max-width: 480px) {
 
 h1 {
-    font-size: 33px;
+    font-size: 29px;
 }
 
 .row {
@@ -1031,6 +1181,31 @@ h1 {
 }
 
 /*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 470px) {
+
+/*-- Section 2 - Sob Page --*/
+
+.step_thumb {
+	width: 100%;
+	max-width: 100% !important;
+	margin: 20px 0;
+	padding: 0;
+}
+
+/*-- /Section 2 - Sob Page --*/
+
+/*-- Section 4- Sob Page --*/
+
+.map_contacts {
+	padding: 20px 15px;
+	background: rgba(255, 255, 255, .9);
+    left: 0;
+}
+
+/*-- /Section 4- Sob Page --*/
 
 }
 
